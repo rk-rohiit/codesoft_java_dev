@@ -3,7 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// BankAccount class representing the user's account
 class BankAccount {
     private double balance;
 
@@ -30,7 +29,6 @@ class BankAccount {
     }
 }
 
-// ATM GUI using Swing
 public class ATM extends JFrame {
     private BankAccount account;
     private JLabel balanceLabel;
@@ -39,7 +37,7 @@ public class ATM extends JFrame {
     public ATM(BankAccount account) {
         this.account = account;
         createUI();
-        setLocationRelativeTo(null); // Center the window
+        setLocationRelativeTo(null); 
     }
 
     private void createUI() {
@@ -57,7 +55,6 @@ public class ATM extends JFrame {
         headerPanel.add(headerLabel);
         add(headerPanel, BorderLayout.NORTH);
 
-        // Main Panel
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new GridLayout(5, 1, 10, 10));
         mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
